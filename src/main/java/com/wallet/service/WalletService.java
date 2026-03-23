@@ -125,7 +125,7 @@ public class WalletService {
 
                 String response = "TxnId: " + txnId;
 
-                // ✅ Step 3: Mark SUCCESS
+                // Step 3: Mark SUCCESS
                 id.setStatus(IdempotencyStatus.SUCCESS);
                 id.setResponse(response);
                 idempotencyRepository.save(id);
